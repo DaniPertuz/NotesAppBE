@@ -17,11 +17,6 @@ export interface ICategory {
   name: string;
 }
 
-export interface ConnectionOptions {
-  mongoUrl: string;
-  dbName: string;
-}
-
 export interface ServerOptions {
   port: number;
   public_path?: string;
