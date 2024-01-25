@@ -11,8 +11,8 @@ export class CategoryRepositoryImpl implements CategoryRepository {
     return this.categoryDatasource.getCategories();
   }
 
-  async createCategory(category: CategoryEntity): Promise<CategoryEntity | null> {
-    return this.categoryDatasource.createCategory(category);
+  async createCategory(name: string): Promise<CategoryEntity | null> {
+    return this.categoryDatasource.createCategory(name);
   }
 
   async removeCategory(id: number): Promise<CategoryEntity | null> {

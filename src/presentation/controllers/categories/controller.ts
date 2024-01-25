@@ -14,9 +14,9 @@ export class CategoriesController {
   };
 
   public createCategory = async (req: Request, res: Response) => {
-    const { id, name } = req.body;
+    const { name } = req.body;
 
-    const category = await this.categoryRepo.createCategory({ id, name });
+    const category = await this.categoryRepo.createCategory(name);
 
     (category) ? res.json(category) : res.status(400).json({ error: 'Category already registered' });
   };
