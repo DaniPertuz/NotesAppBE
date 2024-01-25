@@ -25,3 +25,4 @@ function main() {
         server.start();
     });
 }
+//# sourceMappingURL=app.js.map

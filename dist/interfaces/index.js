@@ -6,3 +6,4 @@ var NoteStatus;
     NoteStatus["Active"] = "active";
     NoteStatus["Archived"] = "archived";
 })(NoteStatus || (exports.NoteStatus = NoteStatus = {}));
+//# sourceMappingURL=index.js.map

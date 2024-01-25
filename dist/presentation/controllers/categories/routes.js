@@ -14,3 +14,4 @@ class CategoriesRoutes {
     }
 }
 exports.CategoriesRoutes = CategoriesRoutes;
+//# sourceMappingURL=routes.js.map

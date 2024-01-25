@@ -13,3 +13,4 @@ CategoryEntity.fromObject = (object) => {
     const category = new CategoryEntity(id, name);
     return category;
 };
+//# sourceMappingURL=category.entity.js.map

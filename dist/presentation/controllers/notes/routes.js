@@ -18,3 +18,4 @@ class NoteRoutes {
     }
 }
 exports.NoteRoutes = NoteRoutes;
+//# sourceMappingURL=routes.js.map

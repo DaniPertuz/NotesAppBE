@@ -17,3 +17,4 @@ NoteEntity.fromObject = (object) => {
     const note = new NoteEntity({ id, title, body, category, status });
     return note;
 };
+//# sourceMappingURL=note.entity.js.map

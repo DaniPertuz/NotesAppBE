@@ -15,3 +15,4 @@ UserEntity.fromObject = (object) => {
     const user = new UserEntity(id, email, password, name);
     return user;
 };
+//# sourceMappingURL=user.entity.js.map

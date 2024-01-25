@@ -32,3 +32,4 @@ class CategoriesController {
     }
 }
 exports.CategoriesController = CategoriesController;
+//# sourceMappingURL=controller.js.map

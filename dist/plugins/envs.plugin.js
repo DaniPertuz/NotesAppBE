@@ -31,3 +31,4 @@ exports.envs = {
     PORT: env.get('PORT').required().asPortNumber(),
     PUBLIC_PATH: env.get('PUBLIC_PATH').required().asString()
 };
+//# sourceMappingURL=envs.plugin.js.map

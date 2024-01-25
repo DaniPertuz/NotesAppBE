@@ -45,3 +45,4 @@ class PostgresCategoryDatasource {
     }
 }
 exports.PostgresCategoryDatasource = PostgresCategoryDatasource;
+//# sourceMappingURL=postgres-category.datasource.js.map
