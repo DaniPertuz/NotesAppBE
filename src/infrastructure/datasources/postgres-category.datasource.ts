@@ -11,7 +11,7 @@ export class PostgresCategoryDatasource implements CategoryDatasource {
   }
 
   async createCategory(category: CategoryEntity): Promise<CategoryEntity | null> {
-    const { id, name } = category;
+    const { name } = category;
 
     const categoryDB = await prisma.category.findFirst({
       where: {
@@ -22,7 +22,7 @@ export class PostgresCategoryDatasource implements CategoryDatasource {
     if (categoryDB) return null;
 
     const newCategory = await prisma.category.create({
-      data: { id, name }
+      data: { name }
     });
 
     return CategoryEntity.fromObject(newCategory);
