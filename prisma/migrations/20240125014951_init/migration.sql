@@ -25,7 +25,6 @@ CREATE TABLE "user_notes" (
     "id" SERIAL NOT NULL,
     "email" VARCHAR NOT NULL,
     "password" VARCHAR NOT NULL,
-    "email_validated" BOOLEAN NOT NULL,
     "name" VARCHAR NOT NULL,
 
     CONSTRAINT "user_pkey" PRIMARY KEY ("id")

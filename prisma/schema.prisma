@@ -23,11 +23,10 @@ model notes {
 }
 
 model user_notes {
-  id              Int     @id(map: "user_pkey") @default(autoincrement())
-  email           String  @db.VarChar
-  password        String  @db.VarChar
-  email_validated Boolean
-  name            String  @db.VarChar
+  id       Int    @id(map: "user_pkey") @default(autoincrement())
+  email    String @db.VarChar
+  password String @db.VarChar
+  name     String @db.VarChar
 }
 
 enum status_enum {
