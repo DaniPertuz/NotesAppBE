@@ -5,9 +5,10 @@ export class CategoriesRoutes {
   static get routes(): Router {
     const router = Router();
 
-    const { createCategory, deleteCategory, getCategories } = new CategoriesController();
+    const { createCategory, deleteCategory, getCategories, getCategory } = new CategoriesController();
 
     router.get('/', getCategories);
+    router.get('/:id', getCategory);
     router.post('/', createCategory);
     router.delete('/:id', deleteCategory);
 

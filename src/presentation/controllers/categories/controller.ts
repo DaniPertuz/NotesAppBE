@@ -10,7 +10,16 @@ export class CategoriesController {
 
   public getCategories = async (req: Request, res: Response) => {
     const categories = await this.categoryRepo.getCategories();
+    
     res.json(categories);
+  };
+
+  public getCategory = async (req: Request, res: Response) => {
+    const id = +req.params.id;
+    
+    const category = await this.categoryRepo.getCategory(id);
+    
+    res.json(category);
   };
 
   public createCategory = async (req: Request, res: Response) => {

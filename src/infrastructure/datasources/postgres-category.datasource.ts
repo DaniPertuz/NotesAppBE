@@ -10,6 +10,18 @@ export class PostgresCategoryDatasource implements CategoryDatasource {
     return categories.map(CategoryEntity.fromObject);
   }
 
+  async getCategory(id: number): Promise<CategoryEntity | null> {
+    const categoryDB = await prisma.category.findFirst({
+      where: {
+        id
+      }
+    });
+
+    if (!categoryDB) return null;
+
+    return CategoryEntity.fromObject(categoryDB);
+  }
+
   async createCategory(name: string): Promise<CategoryEntity | null> {
     const categoryDB = await prisma.category.findFirst({
       where: {
