@@ -9,7 +9,7 @@
     "start": "npm run build && node dist/index.js"
   },
   "engines": {
-    "node": ">=16.0.0 <18.0.0"
+    "node": ">=14.0.0 <18.0.0"
   },
   "keywords": [],
   "author": "",
