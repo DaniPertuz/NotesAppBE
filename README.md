@@ -28,7 +28,13 @@ Technologies used in the project:
 ### Links
 
 Database access: <postgresql://pertuzdaniel4:J9DC5NBaSMcP@ep-soft-leaf-a56ez5td.us-east-2.aws.neon.tech/notes-db>
-Backend hosting: <https://notes-app-api-owvf.onrender.com>
+Backend hosting: <https://notes-app-api-0yg6.onrender.com/api>
+
+### Credentials
+
+* email = <admin@email.com>
+* password = admin123
+
 
 🛠️ Installation Steps for BE:
 
